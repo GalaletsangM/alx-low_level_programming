@@ -12,7 +12,7 @@ int main(void)
 
 	while (c <= 'z')
 	{
-		putcha(c);
+		putchar(c);
 		c++
 		if (c == 'q' || c == 'e')
 			continue;
