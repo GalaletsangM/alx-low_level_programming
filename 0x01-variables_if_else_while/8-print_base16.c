@@ -10,6 +10,7 @@ int main(void)
 {
 	long int c = 0x00;
 
-	putchar(c + '%x');
+	putchar('%x');
+	putchar(c);
 	return (0);
 }
