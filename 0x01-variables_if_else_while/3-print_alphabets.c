@@ -11,11 +11,14 @@ int main(void)
 	char lw = 'a';
 	char up = 'A';
 
-	while (lw <= 'z' && up <= 'Z')
+	while (lw <= 'z')
 	{
 		putchar(lw);
-		putchar(up);
 		lw++;
+	}
+	while (up <= 'Z')
+	{
+		putchar(up);
 		up++;
 	}
 	putchar('\n');
