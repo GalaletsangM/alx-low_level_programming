@@ -11,13 +11,11 @@ int main(void)
 	char c = 'a';
 
 	do {
-		if (c == 'q' || c == 'e')
-			continue;
-		else
-		{
+		if (c != 'q' || c != 'e')
 			putchar(c);
-			c++;
-		}
+		else
+			continue;
+		c++;
 	} while (c <= 'z');
 
 	putchar('\n');
