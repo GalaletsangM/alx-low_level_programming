@@ -12,10 +12,10 @@ int main(void)
 
 	while (c <= 'z')
 	{
+		putcha(c);
+		c++
 		if (c == 'q' || c == 'e')
 			continue;
-		putchar(c);
-		c++;
 	}
 	putchar('\n');
 	return (0);
