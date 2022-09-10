@@ -12,7 +12,11 @@ int main(void)
 	char hex[] = "0123456789abcdef";
 
 	for (c = 0; c <= 'f'; c++)
+	{
 		putchar(hex[c & 0xf]);
+		if (c == 'f')
+			break;
+	}
 	putchar('\n');
 	return (0);
 }
