@@ -8,9 +8,11 @@
 */
 int main(void)
 {
-	long int c = 0;
+	long int c;
 	char hex[] = "0123456789abcdef";
 
-	putchar(hex[c & 0xf]);
+	for (c = 0; c <= 'f'; c++)
+		putchar(hex[c & 0xf]);
+	putchar('\n');
 	return (0);
 }
