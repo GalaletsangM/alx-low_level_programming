@@ -8,7 +8,8 @@
 */
 int main(void)
 {
-	int c = 0;
+	long int c = 0;
+	char hex[] = "0123456789abcdef";
 
 	putchar(hex[c & 0xf]);
 	return (0);
