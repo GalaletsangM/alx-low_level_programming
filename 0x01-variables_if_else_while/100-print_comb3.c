@@ -17,8 +17,10 @@ int main(void)
 		{
 			putchar(i + '0');
 			putchar(j + '0');
-			if (j == 9)
+			if (i == 9 || j == 9)
+			{
 				continue;
+			}
 			putchar(',');
 			putchar(' ');
 		}
