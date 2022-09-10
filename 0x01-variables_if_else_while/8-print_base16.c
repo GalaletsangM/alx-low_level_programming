@@ -8,9 +8,8 @@
 */
 int main(void)
 {
-	long int c = 0x00;
+	int c = 0;
 
-	putchar('%x');
-	putchar(c);
+	putchar(hex[c & 0xf]);
 	return (0);
 }
