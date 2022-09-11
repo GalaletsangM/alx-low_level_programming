@@ -22,11 +22,11 @@ int main(void)
 			{
 				for (d = c + 1; d <= 9; d++)
 				{
-					putchar(a + '0');
-					putchar(b + '0');
+					putchar((a / 10) + '0');
+					putchar((b % 10) + '0');
 					putchar(' ');
-					putchar(c + '0');
-					putchar(d + '0');
+					putchar((c / 10) + '0');
+					putchar((d % 10) + '0');
 					if (a == 9 && b == 8 && c == 9 && d == 9)
 						continue;
 					putchar(',');
