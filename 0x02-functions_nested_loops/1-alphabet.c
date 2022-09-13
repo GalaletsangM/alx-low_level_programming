@@ -1,27 +1,24 @@
 #include <stdio.h>
 /**
- * print_alphabet - print alphabets
+ * print_alphabet - printing alphabets
  */
-
 void print_alphabet(void)
 {
-	char c = 'a';
+	char c;
 
-	while (c <= 'z')
+	for (c == 'a'; c <= 'z'; c++)
 	{
 		putchar(c);
-		c++;
 	}
 }
 
 /**
  * main - Entry point
  *
- * Description: Print alphabets
+ * Description: Printing alphabets
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	print_alphabet();
