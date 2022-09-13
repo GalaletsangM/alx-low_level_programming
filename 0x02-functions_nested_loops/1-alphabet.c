@@ -1,18 +1,5 @@
 #include <stdio.h>
 /**
- * print_alphabet - printing alphabets
- */
-void print_alphabet(void)
-{
-	char c;
-
-	for (c = 'a'; c <= 'z'; c++)
-	{
-		putchar(c);
-	}
-}
-
-/**
  * print_alphabet - prints alphabets
  */
 void print_alphabet(void);
@@ -27,5 +14,20 @@ void print_alphabet(void);
 int main(void)
 {
 	print_alphabet();
+	putchar('\n');
 	return (0);
+}
+
+/**
+ * print_alphabet - print alphabets in small letters
+ */
+void print_alphabet(void)
+{
+	char c = 'a';
+
+	while (a <= 'z)
+	{
+		putchar(c);
+		c++;
+	}
 }
