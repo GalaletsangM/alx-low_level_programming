@@ -24,6 +24,6 @@ void print_alphabet(void)
 
 int main(void)
 {
-	putchar(c + '\n');
+	putchar(print_alphabet());
 	return (0);
 }
