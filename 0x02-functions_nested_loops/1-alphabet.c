@@ -1,4 +1,5 @@
 #include "main.h"
+#define "main.h"
 /**
  * print_alphabet - printing alphabets
  */
