@@ -1,5 +1,8 @@
 #include "main.h"
-
+#define putchar()
+/**
+ * print_alphabet - printing alphabets
+ */
 void print_alphabet(void);
 /**
  * main - Entry point
