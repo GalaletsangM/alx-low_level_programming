@@ -21,7 +21,9 @@ void print_alphabet(void)
  */
 int main(void)
 {
-	print_alphabet(void);
-	putchar('\n');
+	char print;
+
+	print = print_alphabet();
+	putchar(print);
 	return (0);
 }
