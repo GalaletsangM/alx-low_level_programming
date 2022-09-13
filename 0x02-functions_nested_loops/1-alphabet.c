@@ -1,5 +1,4 @@
 #include "main.h"
-#define putchar()
 /**
  * print_alphabet - printing alphabets
  */
