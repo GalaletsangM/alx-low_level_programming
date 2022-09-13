@@ -16,17 +16,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
-/**
- * print_alphabet - print alphabets in small letters
- */
-void print_alphabet(void)
-{
-	char c = 'a';
-
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
-}
