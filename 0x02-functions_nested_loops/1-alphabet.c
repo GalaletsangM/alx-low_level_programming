@@ -11,8 +11,10 @@ void print_alphabet(void)
 		putchar(ch);
 	}
 }
-
-void print_alphabet(voi);
+/**
+ * print_alphabet - printing lowercase
+ */
+void print_alphabet(void);
 /**
  * main - Entry point
  *
