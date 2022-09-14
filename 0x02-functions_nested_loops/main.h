@@ -3,5 +3,5 @@
 /**
  * print_alphabet - printing the alphabets
  */
-void print_alphabet(void)
+void print_alphabet(void);
 #endif
