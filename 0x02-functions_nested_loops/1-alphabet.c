@@ -1,4 +1,3 @@
-#include  <iostream>
 #include <stdio.h>
 /**
  * print_alphabet - printing alphabets in lowercase followed by new line
