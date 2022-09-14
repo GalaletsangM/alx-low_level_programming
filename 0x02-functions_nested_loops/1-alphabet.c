@@ -1,13 +1,21 @@
-#include "main.h"
+#include  <iostream>
 #include <stdio.h>
 /**
- * print_alphabet - printing alphabets
+ * print_alphabet - printing alphabets in lowercase followed by new line
  */
-void print_alphabet(void);
+void print_alphabet(void)
+{
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; c++)
+	{
+		putchar(ch);
+	}
+}
 /**
  * main - Entry point
  *
- * Description: Printing alphabets
+ * Description: Printing lowercase alphabets
  *
  * Return: Always 0 (Success)
  */
@@ -16,17 +24,4 @@ int main(void)
 	print_alphabet();
 	putchar('\n');
 	return (0);
-}
-/**
- * print_alphabet - printing the alphabets
- */
-void print_alphabet(void)
-{
-	char c = 'a';
-
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
 }
