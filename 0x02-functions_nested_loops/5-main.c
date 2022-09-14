@@ -6,12 +6,10 @@
  */
 int main(void)
 {
-	int n;
+	int n = 5;
 	int r;
 
 	r = print_sign(n);
-	_putchar(',');
-	_putchar(' ');
 	_putchar(r + '0');
 	_putchar('\n');
 	return (0);
