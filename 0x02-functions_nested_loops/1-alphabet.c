@@ -1,6 +1,8 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * print_alphabet - printing alphabets in lowercase followed by new line
+ *
+ * Return: void
  */
 void print_alphabet(void)
 {
@@ -8,23 +10,6 @@ void print_alphabet(void)
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putchar(ch);
+		_putchar(ch);
 	}
-}
-/**
- * print_alphabet - printing lowercase
- */
-void print_alphabet(void);
-/**
- * main - Entry point
- *
- * Description: Printing lowercase alphabets
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	print_alphabet(ch);
-	putchar('\n');
-	return (0);
 }
