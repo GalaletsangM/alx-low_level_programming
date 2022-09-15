@@ -6,11 +6,7 @@
  */
 int main(void)
 {
-	int r;
-
-	r = print_last_digit(98);
-	_putchar('0' + r);
-	_putchar(r + '0');
+	print_last_digit(98);
 	_putchar('\n');
 	return (0);
 }
