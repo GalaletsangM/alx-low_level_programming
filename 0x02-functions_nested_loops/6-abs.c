@@ -2,12 +2,10 @@
 #include "main.h"
 /**
  * _abs - print the absolute value
- * @int: integer
+ * @j: integer
  *Return: Absolute value
  */
-int _abs(int)
+int _abs(int j)
 {
-	int j;
-
 	return (_abs(j));
 }

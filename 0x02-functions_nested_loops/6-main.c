@@ -6,6 +6,9 @@
  */
 int main(void)
 {
-	_abs(int i);
+	int r;
+
+	r = _abs(-1);
+	_putchar(r + '0');
 	return (0);
 }
