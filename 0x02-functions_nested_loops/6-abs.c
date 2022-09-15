@@ -7,5 +7,6 @@
  */
 int _abs(int j)
 {
+	_putchar(_abs(j));
 	return (_abs(j));
 }
