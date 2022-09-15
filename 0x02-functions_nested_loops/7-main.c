@@ -8,7 +8,7 @@ int main(void)
 {
 	int r;
 
-	print_last_digit(548);
+	print_last_digit(r);
 	_putchar('\n');
 	return (0);
 }
