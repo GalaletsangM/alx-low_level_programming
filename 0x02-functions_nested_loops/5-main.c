@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int n = 5;
+	int n = 0;
 	int r;
 
 	r = print_sign(n);
