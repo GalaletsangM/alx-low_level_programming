@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Entry point
  *
@@ -7,8 +8,6 @@
  */
 int main(void)
 {
-	int n = 100;
-
-	print_to_98(n + '0');
+	print_to_98(100);
 	return (0);
 }
