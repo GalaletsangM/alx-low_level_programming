@@ -6,8 +6,7 @@
  */
 int main(void)
 {
-	int *n;
-
-	reset_to_98(*n);
+	reset_to_98(15);
+	putchar('\n');
 	return (0);
 }
