@@ -10,6 +10,6 @@ int main(void)
 	int len;
 
 	len = _strlen(s);
-	putchar(len + '0');
+	printf("%d", len);
 	putchar('\n');
 }
