@@ -8,14 +8,19 @@
 void print_rev(char *s)
 {
 	int i;
-	int len;
-	int tmp;
+	int j;
+	int count;
+	char *new;
 
-	len = strlen(s);
-	for (i = 0; i < len / 2; i++)
+	while (s[count] != '\0')
 	{
-		tmp = s[i];
-		s[i] = s[len - i - 1];
-		s[len - i - 1] = tmp;
+		count++;
 	}
+	j = count - 1;
+	for (i = 0; i < count; i++)
+	{
+		new[i] = str[j];
+		j--;
+	}
+	printf("%s", new);
 }
