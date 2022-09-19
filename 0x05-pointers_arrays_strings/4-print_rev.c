@@ -7,20 +7,21 @@
  */
 void print_rev(char *s)
 {
+	char tmp;
+	int l;
+	int lind;
+	int rind;
 	int i;
-	int j;
-	int count;
-	char *new[];
 
-	while (s[count] != '\0')
+	l = strlen(s);
+	lind = 0;
+	rind = l - 1;
+	for (i = lind; i < rind; i++)
 	{
-		count++;
+		tmp = s[i];
+		s[i] = s[rind];
+		s[rind] = tmp;
+		rind--;
 	}
-	j = count - 1;
-	for (i = 0; i < count; i++)
-	{
-		new[i] = s[j];
-		j--;
-	}
-	printf("%s", new);
+	printf("%s\n", s);
 }
