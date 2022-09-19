@@ -7,5 +7,6 @@
 int main(void)
 {
 	more_numbers();
+	putchar('\n');
 	return (0);
 }
