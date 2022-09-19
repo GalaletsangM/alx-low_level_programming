@@ -6,7 +6,11 @@
  */
 int main(void)
 {
-	reset_to_98();
+	int i;
+
+	i = 50
+	reset_to_98(&i);
+	printf("%d", i);
 	putchar('\n');
 	return (0);
 }
