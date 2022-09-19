@@ -19,7 +19,7 @@ void print_rev(char *s)
 	j = count - 1;
 	for (i = 0; i < count; i++)
 	{
-		new[i] = str[j];
+		new[i] = s[j];
 		j--;
 	}
 	printf("%s", new);
