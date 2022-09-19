@@ -6,9 +6,7 @@
  */
 int main(void)
 {
-	int i;
-
-	reset_to_98(&i);
+	reset_to_98();
 	putchar('\n');
 	return (0);
 }
