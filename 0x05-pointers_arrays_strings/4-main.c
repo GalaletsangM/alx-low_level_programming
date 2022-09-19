@@ -10,4 +10,6 @@ int main(void)
 	char *s;
 
 	print_rev(s);
+	printf("%s", s);
+	putchar('\n');
 	return (0);
