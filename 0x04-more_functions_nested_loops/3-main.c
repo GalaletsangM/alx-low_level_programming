@@ -7,5 +7,6 @@
 int main(void)
 {
 	print_numbers();
+	putchar('\n');
 	return (0);
 }
