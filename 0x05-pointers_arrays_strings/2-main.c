@@ -7,6 +7,9 @@
 int main(void)
 {
 	char *s;
+	int len;
 
-	_strlen(s);
+	len = _strlen(s);
+	putchar(len + '0');
+	putchar('\n');
 }
