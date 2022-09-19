@@ -6,9 +6,8 @@
  */
 int main(void)
 {
-	int p;
+	int *n;
 
-	p = 15;
-	reset_to_98(p);
+	reset_to_98(*n);
 	return (0);
 }
