@@ -11,7 +11,6 @@ void puts_half(char *str)
 	int len;
 	int i;
 	int mid;
-	char half[101];
 
 	len = strlen(str);
 	mid = len / 2;
@@ -24,8 +23,7 @@ void puts_half(char *str)
 	{
 		for (i = mid; str[i] != '\0'; i++)
 		{
-			half[i] = str[i];
-			printf("%s", half);
+			putchar(str[i]);
 		}
 	}
 	printf("\n");
