@@ -7,8 +7,9 @@
  */
 int main(void)
 {
-	char s = "Hello Wolrd";
+	char *str = "Hello!";
 
-	puts2(s);
+	puts2(str);
+	printf("\n");
 	return (0);
 }
