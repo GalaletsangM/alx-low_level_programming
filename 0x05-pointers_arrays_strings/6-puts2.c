@@ -8,9 +8,9 @@
 void puts2(char *str)
 {
 	char s[] = " ";
-	int i;
+	long int i;
 
-	for (i = 0; i < strlen(str); i++)
+	for (i = 0; i < strlen(str); i += 2)
 	{
 		putchar(str[i]);
 		s[i / 2] = str[i];
