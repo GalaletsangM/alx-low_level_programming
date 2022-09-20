@@ -11,7 +11,6 @@ void puts_half(char *str)
 	int len;
 	int i;
 	int mid;
-	char half;
 
 	len = strlen(str);
 	mid = len / 2;
