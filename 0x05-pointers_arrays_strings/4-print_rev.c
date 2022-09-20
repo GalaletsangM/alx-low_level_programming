@@ -23,5 +23,5 @@ void print_rev(char *s)
 		end--;
 	}
 	r[begin] = '\0';
-	printf("%s", r);
+	printf("%s\n", r);
 }
