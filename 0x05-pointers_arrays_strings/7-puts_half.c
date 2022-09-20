@@ -18,7 +18,6 @@ void puts_half(char *str)
 	{
 		n = (len - 1) / 2;
 		putchar(str[n]);
-		str[n] = '\0';
 	}
 	else
 	{
@@ -26,7 +25,6 @@ void puts_half(char *str)
 		{
 			putchar(str[i]);
 		}
-		str[i] = '\0';
 	}
 	printf("\n");
 }
