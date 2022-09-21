@@ -4,6 +4,7 @@
 /**
  * _atoi - string to integer
  * @s: string
+ * Return: i
  */
 int _atoi(char *s)
 {
