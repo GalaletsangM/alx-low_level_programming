@@ -1,15 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - entry point
+ *
  * Return: Always 0
  */
 int main(void)
 {
-	int n;
-
-	n = print_last_digit(98);
-	printf("%d", n);
-	printf("%d\n", n);
+	times_table();
 	return (0);
 }
