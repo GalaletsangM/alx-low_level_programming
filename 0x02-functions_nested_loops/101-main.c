@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	multiples(10);
+	multiples(1024);
 	return (0);
 }

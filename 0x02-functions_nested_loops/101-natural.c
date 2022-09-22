@@ -7,12 +7,10 @@
  */
 int multiples(int n)
 {
-	n = 10;
-	int a = 0;
 	int i = 0;
 	int k = 0;
 
-	while (a < 10)
+	while (i < n)
 	{
 		if ((i % 3 == 0) || (i % 5 == 0))
 		{
