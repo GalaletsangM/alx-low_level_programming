@@ -9,15 +9,24 @@
  */
 char *cap_string(char *n)
 {
+	char sep[] = " \t\n,;.!?\"(){}";
 	int i;
-	int x;
+	int j;
 
-	x = strlen(n);
-	for (i = 1; i < x; i++)
+	for (i = 0; (*(n + i) != '\0'); i++)
 	{
-		if (isalpha(n[i]) && (n[i - 1] == ' '))
+		if (*(n + i) >= 'a' && *(n + i) <= 'z')
 		{
-			n[i] = toupper(n[i]);
+			if (i == 0)
+			*(n) += ('A' - 'a');
+			else
+			{
+				for (j = 0; j < 13; j++)
+				{
+					if (*(n + i - 1) == sep[j])
+					*(n + i) += ('A' - 'a');
+				}
+			}
 		}
 	}
 	return (n);
