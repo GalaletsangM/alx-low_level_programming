@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-	char a[20];
-	char b[20];
-	int c;
+	char a[] = "Hello";
+	char b[] = "World!";
 
-	c = _strcmp(a, b);
-	printf("%d\n", c);
+	printf("%d\n", _strcmp(a, b));
+	printf("%d\n", _strcmp(b, a));
+	printf("%d\n", _strcmp(a, a));
 	return (0);
 }
