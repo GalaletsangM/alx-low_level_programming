@@ -7,9 +7,8 @@
  */
 int main(void)
 {
-	int a[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 1024, 1337};
-	int n = sizeof(a) / sizeof(int);
-
-	reverse_array(a, n);
+	char n[] = "text with lowercase words";
+	cap_string(n);
+	printf("%s\n", n);
 	return (0);
 }
