@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * reverse_array - arrays
  * @a: array of int
@@ -9,23 +10,22 @@
 void reverse_array(int *a, int n)
 {
 	int i;
-	int tmp;
+	int k;
 
 	for (i = 0; i < n / 2; i++)
 	{
-		tmp = a[i];
+		k = a[i];
 		a[i] = a[n - i - 1];
-		a[n - i - 1] = tmp;
+		a[n - i - 1] = k;
 	}
 	for (i = 0; i < n; i++)
 	{
 		printf("%d", a[i]);
-		if (i == n - 1)
+		if ((i == n - 1))
 		{
 			break;
 		}
 		printf(", ");
 	}
-	putchar('\n');
-	putchar('\n');
+	printf("\n");
 }
