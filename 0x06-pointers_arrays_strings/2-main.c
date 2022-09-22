@@ -13,5 +13,6 @@ int main(void)
 	_strncpy(b, a, 7);
 	printf("%s", b);
 	putchar('\n');
+	putchar('\n');
 	return (0);
 }
