@@ -13,5 +13,6 @@ int main(void)
 
 	ptr = _strcat(a, b);
 	printf("%s", ptr);
+	putchar('\n');
 	return (0);
 }
