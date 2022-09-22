@@ -15,7 +15,7 @@ void print_diagonal(int n)
 		{
 			if (j == i)
 			{
-				printf("#");
+				printf("\\");
 			}
 			else
 			{
