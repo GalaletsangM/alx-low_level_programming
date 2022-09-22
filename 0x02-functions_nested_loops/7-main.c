@@ -7,9 +7,10 @@
 int main(void)
 {
 	int n;
+	int i = 98;
 
-	n = print_last_digit(98);
-	printf("%d%d", n, n);
-	printf("%d\n", n);
+	n = print_last_digit(i);
+	_putchar('0' + n);
+	_putchar('\n');
 	return (0);
 }
