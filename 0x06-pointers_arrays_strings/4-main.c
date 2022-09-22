@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int a[] = {1, 2, 3, 4, 5};
+	int a[] = {1, 2, 3, 4, 5, 6, 34, 65};
 	int n = sizeof(a) / sizeof(int);
 
 	reverse_array(a, n);
