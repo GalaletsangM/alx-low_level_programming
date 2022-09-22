@@ -17,13 +17,9 @@ int _strcmp(char *s1, char *s2)
 
 	for (j = 0; s2[j] != '\0'; ++j)
 
-	if (i < j)
+	if (i != j)
 	{
-		k = -15;
-	}
-	else if (i > j)
-	{
-		k = 15;
+		k = s1[i] - s2[j];
 	}
 	else
 	{
