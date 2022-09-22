@@ -10,6 +10,6 @@ int main(void)
 	char *p;
 
 	p = rot13(s);
-	pritnf("%s", p);
+	printf("%s", p);
 	return (0);
 }
