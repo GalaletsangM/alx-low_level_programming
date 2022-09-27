@@ -7,9 +7,10 @@
  */
 int main(void)
 {
-	char *s0 = "Bob Dylan";
-	char *s1 = "Robert Allen";
+	char *s0 = "Anne Cognet";
+	char *s1 = "Asiaa Palacios";
 
 	set_string(&s1, s0);
+	printf("\n");
 	return (0);
 }
