@@ -10,7 +10,7 @@ int main(void)
 {
 	int r;
 
-	r = _pow_recursion(1, 10);
+	r = _pow_recursion(2, 3);
 	printf("%d\n", r);
 	return (0);
 }
