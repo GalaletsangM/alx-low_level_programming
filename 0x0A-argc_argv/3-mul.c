@@ -13,15 +13,15 @@ int main(int argc, char *argv[])
 	int results;
 
 
-	results = 0;
-	if (argc <= 2)
+	results = 1;
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	else
 	{
-		for (i = 1; i <= argc; i++)
+		for (i = 1; i < argc; i++)
 		{
 			results = results * atoi(argv[i]);
 		}
