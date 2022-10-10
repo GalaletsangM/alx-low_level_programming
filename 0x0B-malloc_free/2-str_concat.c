@@ -16,18 +16,35 @@ char *str_concat(char *s1, char *s2)
 	int i;
 	char *a;
 
+	if (s1 == NULL && s2 == NULL)
+	{
+		return (NULL);
+	}
+	else if (s1 == NULL && s2 != NULL)
+	{
+		s1 = "";
+	}
+	else if (s1 != NULL && s2 == NULL)
+	{
+		s2 = "";
+	}
 	t1 = strlen(s1);
 	t2 = strlen(s2);
 	t3 = t1 + t2 + 1;
 	a = malloc(sizeof(char) * t3);
 
+	if (a == NULL)
+	{
+		free(a);
+		return (NULL);
+	}
 	for (i = 0; i < t1; i++)
 	{
 		a[i] = s1[i];
 	}
-	for (i = 0; i < s2; i++)
+	for (i = 0; i < t2; i++)
 	{
-		a[1 + s1] = s2[i];
+		a[i + t1] = s2[i];
 	}
 	a[i] = '\0';
 	return (a);
