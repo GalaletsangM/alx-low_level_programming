@@ -9,13 +9,18 @@
 int main(void)
 {
 	char *d;
-	char c = "Hello";
+	char *c = NULL;
 
 	d = _strdup(c);
-	if (d == NULL || c == NULL)
+	if (c == NULL)
 	{
 		printf("failed to allocate memory\n");
 		return (1);
+	}
+	d = _strdup(c);
+	if (d == NULL)
+	{
+		printf("failed to allocate memory\n");
 	}
 	printf("%s\n", d);
 	free (d);
