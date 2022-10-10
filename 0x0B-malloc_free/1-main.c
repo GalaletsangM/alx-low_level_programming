@@ -8,6 +8,10 @@
  */
 int main(void)
 {
-	_strdup("Hello");
+	char *d;
+
+	d = _strdup("Hello");
+	printf("%s\n", d);
+	free(d);
 	return (0);
 }
