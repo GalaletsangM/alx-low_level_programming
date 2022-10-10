@@ -11,11 +11,16 @@ char *_strdup(char *str)
 {
 	char *c;
 
+	if (str == NULL)
+	{
+		printf("failed to allocate memory\n");
+	}
 	c = malloc(sizeof(char) * strlen(str));
-	if (str == NULL || c == NULL)
+	if (c == NULL)
 	{
 		printf("failed to allocate memory\n");
 	}
 	c = strcpy(c, str);
 	return (c);
+	free (c);
 }
