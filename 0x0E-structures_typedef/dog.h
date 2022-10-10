@@ -9,7 +9,7 @@
  *
  * Description: a new type struct with the 3 given elements
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
