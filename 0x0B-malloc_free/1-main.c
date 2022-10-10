@@ -9,9 +9,10 @@
 int main(void)
 {
 	char *d;
+	char c = "Hello";
 
-	d = _strdup("Hello");
-	if (d == NULL)
+	d = _strdup(c);
+	if (d == NULL || c == NULL)
 	{
 		printf("failed to allocate memory\n");
 		return (1);
