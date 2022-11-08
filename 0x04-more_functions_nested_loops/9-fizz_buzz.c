@@ -26,6 +26,7 @@ void fizzBuzz(int num)
 			printf("%d ", i);
 		}
 	}
+	printf("\n");
 }
 /**
  * main - entry point
