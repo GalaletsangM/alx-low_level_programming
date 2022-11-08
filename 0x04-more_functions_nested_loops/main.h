@@ -12,4 +12,5 @@ void print_diagonal(int n);
 void print_square(int size);
 void fizzBuzz(int num);
 void print_triangle(int size);
+void prime_factor(long int num);
 #endif
