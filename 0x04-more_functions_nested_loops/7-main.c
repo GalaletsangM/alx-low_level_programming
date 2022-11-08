@@ -7,5 +7,6 @@
 int main(void)
 {
 	print_diagonal(4);
+	printf("\n");
 	return (0);
 }
