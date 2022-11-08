@@ -19,6 +19,11 @@ void fizzBuzz(int num)
 		}
 		else if ((i % 5 == 0))
 		{
+			if (i == num)
+			{
+				printf("Buzz");
+				break;
+			}
 			printf("Buzz ");
 		}
 		else
