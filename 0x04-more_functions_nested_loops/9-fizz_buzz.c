@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * fizzBuzz - fizzBuzz game
@@ -27,4 +26,13 @@ void fizzBuzz(int num)
 			printf("%d ", i);
 		}
 	}
+}
+/**
+ * main - entry point
+ * Return: 0
+ */
+int main(void)
+{
+	fizzBuzz(100);
+	return (0);
 }
