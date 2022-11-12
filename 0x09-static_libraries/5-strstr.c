@@ -7,24 +7,4 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char *results = haystack, *fneedle = needle;
-
-	while (*haystack)
-	{
-		while (*needle)
-		{
-			if (*haystack++ != *needle++)
-			{
-				break;
-			}
-		}
-		if (!*needle)
-		{
-			return (results);
-		}
-		needle = fneedle;
-		results++;
-		haystack = results;
-	}
-	return (0);
 }
