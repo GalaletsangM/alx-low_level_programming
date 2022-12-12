@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-#include <stdio>
+#include <stdio.h>
 /**
  * int_index - returns the index of the first elememt
  * @array: am array to be searched
@@ -18,9 +18,10 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	for (x = 0; x < size; x++)
 	{
-		if ((cmp)(array[x]) != o)
+		if ((cmp)(array[x]) != 0)
 		{
 			return (x);
 		}
 	}
+	return (-1);
 }
