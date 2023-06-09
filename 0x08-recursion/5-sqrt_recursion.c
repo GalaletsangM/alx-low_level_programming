@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * _sqrt_recursion - returns the natural square root
- * @n: number
+ * @n: input
  * Return: square root
  */
 int _sqrt_recursion(int n)
