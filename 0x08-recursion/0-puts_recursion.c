@@ -3,13 +3,16 @@
 #include <stdio.h>
 /**
  * _puts_recursion - prints a string, followed by new line
- * @s: string
+ * @s: input
+ * Return: Always 0 (success)
  */
 void _puts_recursion(char *s)
 {
-	if (*s == ' ')
+	if (*s)
 	{
-		return;
+		_putchar(*s);
+		_puts_recursion(s + 1);
 	}
-	puts(s);
+	else
+		_putchar('\n');
 }
