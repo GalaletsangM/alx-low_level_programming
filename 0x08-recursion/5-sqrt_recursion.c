@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 int the_sqrt_recursion(int n, int i);
+
 /**
  * _sqrt_recursion - returns the natural square root
  * @n: number
@@ -16,7 +17,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * the sqrt_recursion - recursing to find the actual
+ * the_sqrt_recursion - recursing to find the actual
  * square root of a number
  * @n: number to be checked
  * @i: iterator
