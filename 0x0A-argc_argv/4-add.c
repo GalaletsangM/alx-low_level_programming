@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int sum;
+	int n;
 
 	sum = 0;
 	if (argc == 1)
@@ -24,7 +25,13 @@ int main(int argc, char *argv[])
 		{
 			if (isdigit(*argv[i]))
 			{
-				sum += atoi(argv[i]);
+				n = atoi(argv[i]);
+				if (!(isdigit(n)))
+				{
+					printf("Error\n");
+					return (1);
+				}
+				sum += n;
 			}
 			else
 			{
