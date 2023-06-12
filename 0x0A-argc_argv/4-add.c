@@ -2,6 +2,30 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+
+/**
+ * check_num - check if a string is a number
+ * @str: array str
+ *
+ * Return: Always 0 on success
+ */
+
+int check_num(char *str)
+{
+	unsigned int i;
+
+	i = 0;
+	while (i < strlen(str)) /*count string*/
+	{
+		if (!isdigit(str[i])) /*check if n has digit*/
+		{
+			return (0);
+		}
+		i++;
+	}
+	return (1);
+}
+
 /**
  * main - addition
  * @argc: number of arguments
@@ -10,36 +34,25 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	int sum;
-	int n;
+	int i = 1;
+	int str_to_int;
+	int sum = 0;
 
-	sum = 0;
-	if (argc == 1)
+	while (i < argc) /*goes through the whole array*/
 	{
-		printf("0\n");
-	}
-	else
-	{
-		for (i = 1; i < argc; i++)
+		if (check_num(argv[i]))
 		{
-			if (isdigit(*argv[i]))
-			{
-				n = atoi(argv[i]);
-				if (!(isdigit(n)))
-				{
-					printf("Error\n");
-					return (1);
-				}
-				sum += n;
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
+			str_to_int = atoi(argv[i]); /*convert to int*/
+			sum += str_to_int;
 		}
-		printf("%d\n", sum);
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+		i++;
 	}
+	printf("%d\n", sum);
+
 	return (0);
 }
