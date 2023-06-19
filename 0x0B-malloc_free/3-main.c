@@ -37,7 +37,6 @@ int main(void)
 	grid = alloc_grid(6, 4);
 	if (grid == NULL)
 	{
-		free(grid);
 		return (1);
 	}
 	print_grid(grid, 6, 4);
