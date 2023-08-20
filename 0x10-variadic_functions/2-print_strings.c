@@ -21,13 +21,16 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		const char *answer = va_arg(str, const char*);
 
-		printf("%s", answer);
-
-		if ((unsigned int)i != n)
+		if (str != '\0')
 		{
-			if (separator != NULL)
+			printf("%s", answer);
+
+			if ((unsigned int)i != n)
 			{
-				printf("%s", separator);
+				if (separator != NULL)
+				{
+					printf("%s", separator);
+				}
 			}
 		}
 	}
