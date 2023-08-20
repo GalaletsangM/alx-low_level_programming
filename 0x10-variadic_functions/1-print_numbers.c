@@ -21,10 +21,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		int num = va_arg(mylist, int);
 
-		printf("%d",num);
-		if((unsigned int)i != n)
+		printf("%d", num);
+		if ((unsigned int)i != n)
 		{
-			if(separator != NULL)
+			if (separator != NULL)
 			{
 				printf("%s", separator);
 			}
