@@ -24,7 +24,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		printf("%d",num);
 		if((unsigned int)i != n)
 		{
-			printf("%s", separator);
+			if(separator != NULL)
+			{
+				printf("%s", separator);
+			}
 		}
 	}
 	printf("\n");
