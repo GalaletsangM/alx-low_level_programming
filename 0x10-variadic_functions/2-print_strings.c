@@ -23,6 +23,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (str != '\0')
 		{
+			if (str == NULL)
+			{
+				printf("(nil)");
+			}
 			printf("%s", answer);
 
 			if ((unsigned int)i != n)
