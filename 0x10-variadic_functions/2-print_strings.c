@@ -17,24 +17,27 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_start(str, n);
 
-	for (i = 0; i < n; i++)
+	for (i = 1; i <= n; i++)
 	{
 		const char *answer = va_arg(str, const char*);
 
+		if (str != '\0')
+		{
 
-		if (answer == NULL)
-		{
-			printf("(nil)");
-		}
-		else
-		{
-			printf("%s", answer);
-		}
-		if ((unsigned int)i != n)
-		{
-			if (separator != NULL)
+			if (answer == NULL)
 			{
-				printf("%s", separator);
+				printf("(nil)");
+			}
+			else
+			{
+				printf("%s", answer);
+			}
+			if ((unsigned int)i != n)
+			{
+				if (separator != NULL)
+				{
+					printf("%s", separator);
+				}
 			}
 		}
 	}
