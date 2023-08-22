@@ -24,29 +24,24 @@ void print_all(const char * const format, ...)
 			switch(format[i])
 			{
 				case 'i':
-					printf("%d ", va_arg(var, int));
+					printf("%s%d ", seperator, va_arg(var, int));
 					break;
 				case 'c':
-					printf("%c ", va_arg(var, int));
+					printf("%s%c", seperator, va_arg(var, int));
 					break;
 				case 'f':
-					printf("%f ", va_arg(var, double));
+					printf("%s%f", seperator, va_arg(var, double));
 					break;
 				case 's':
 					string = va_arg(var, char*);
 
 					if (string == NULL)
 						printf("(nil)");
-					printf("%s ", string);
+					printf("%s%s",seperator, string);
 					break;
 				default:
 					i++;
 					continue;
-			}
-
-			while (format[i] != '\0')
-			{
-				printf("%s ", seperator);
 			}
 			i++;
 		}
