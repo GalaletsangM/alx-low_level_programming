@@ -11,7 +11,7 @@
 void print_all(const char * const format, ...)
 {
 	int i;
-	char *seperator = ",";
+	char *seperator = "";
 	char *string;
 	va_list var;
 
@@ -43,6 +43,7 @@ void print_all(const char * const format, ...)
 					i++;
 					continue;
 			}
+			seperator = ",";
 			i++;
 		}
 	}
